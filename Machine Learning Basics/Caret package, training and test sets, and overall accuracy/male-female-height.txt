@@ -224,9 +224,7 @@ Error in which.max(acuracy) : object 'acuracy' not found
 > best_cutoff <- cutoff[which.max(accuracy)]
 > best_cutoff
 [1] 64
-> y_hat <- ifelse(test+set$height > besT_cutoff, "Male","Female") %>% factor(levels = levels(test_set$sex))
-Error in ifelse(test + set$height > besT_cutoff, "Male", "Female") : 
-  object 'test' not found
-> y_hat <- factor(y_hat)
+> y_hat <-ifelse(test_set$height > best_cutoff, "Male", "Female") %>% factor(levels = levels(test_set$sex))
+> y_hat <-factor(y_hat)
 > mean(y_hat == test_set$sex)
-[1] 0.74
+[1] 0.8152381

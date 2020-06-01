@@ -6,4 +6,4 @@ Now let's say that we have a cutoff of 62 inches. Our model accuracy increases t
 
 However, we selected 62 inches almost arbitrarily, we can do even better. Let's test different cutoffs from 61 to 70. From this test we find that the model with the highest accuracy is 84.95% accurate in our training set which has a cutoff of 64. 
 
-Let's really check if our model is accurate by using it against a testing test. Our model has an accuracy of 74% which is not as good as our training set but still much better than guessing! 
+Let's really check if our model is accurate by using it against a testing test. Our model has an accuracy of 81.52% which is not as good as our training set but still much better than guessing! 
