@@ -1,0 +1,41 @@
+> table(predicted = y_hat, actual = test_set$sex)
+         actual
+predicted Female Male
+   Female     49   27
+   Male       70  379
+> test_set %>% mutate(y_hat = y_hat) %>% group_by(sex) %>% summarize(accuracy = mean(y_hat == sex))
+# A tibble: 2 x 2
+  sex    accuracy
+  <fct>     <dbl>
+1 Female    0.412
+2 Male      0.933
+> prev <- mean(y == "Male")
+> prev
+[1] 0.7733333
+> confusionMatrix(data = y_hat, reference = test_set$sex)
+Confusion Matrix and Statistics
+
+          Reference
+Prediction Female Male
+    Female     49   27
+    Male       70  379
+                                          
+               Accuracy : 0.8152          
+                 95% CI : (0.7793, 0.8475)
+    No Information Rate : 0.7733          
+    P-Value [Acc > NIR] : 0.0112          
+                                          
+                  Kappa : 0.3958          
+                                          
+ Mcnemar's Test P-Value : 2.004e-05       
+                                          
+            Sensitivity : 0.41176         
+            Specificity : 0.93350         
+         Pos Pred Value : 0.64474         
+         Neg Pred Value : 0.84410         
+             Prevalence : 0.22667         
+         Detection Rate : 0.09333         
+   Detection Prevalence : 0.14476         
+      Balanced Accuracy : 0.67263         
+                                          
+       'Positive' Class : Female   
