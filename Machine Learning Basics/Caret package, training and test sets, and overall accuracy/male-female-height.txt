@@ -1,0 +1,232 @@
+> library(caret)
+Loading required package: lattice
+Loading required package: ggplot2
+Warning messages:
+1: package ‘caret’ was built under R version 3.6.3 
+2: package ‘ggplot2’ was built under R version 3.6.3 
+> install.packages("tidyverse")
+Installing package into ‘C:/Users/ShuaibReeyaz/Documents/R/win-library/3.6’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘base64enc’, ‘tinytex’, ‘rmarkdown’, ‘selectr’, ‘dbplyr’, ‘modelr’, ‘reprex’, ‘rvest’
+
+
+  There is a binary version available but the source version is later:
+          binary source needs_compilation
+rmarkdown    2.1    2.2             FALSE
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/base64enc_0.1-3.zip'
+Content type 'application/zip' length 43488 bytes (42 KB)
+downloaded 42 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/tinytex_0.23.zip'
+Content type 'application/zip' length 109281 bytes (106 KB)
+downloaded 106 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/selectr_0.4-2.zip'
+Content type 'application/zip' length 494433 bytes (482 KB)
+downloaded 482 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/dbplyr_1.4.4.zip'
+Content type 'application/zip' length 644861 bytes (629 KB)
+downloaded 629 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/modelr_0.1.8.zip'
+Content type 'application/zip' length 203215 bytes (198 KB)
+downloaded 198 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/reprex_0.3.0.zip'
+Content type 'application/zip' length 430388 bytes (420 KB)
+downloaded 420 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/rvest_0.3.5.zip'
+Content type 'application/zip' length 665186 bytes (649 KB)
+downloaded 649 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/tidyverse_1.3.0.zip'
+Content type 'application/zip' length 440091 bytes (429 KB)
+downloaded 429 KB
+
+package ‘base64enc’ successfully unpacked and MD5 sums checked
+package ‘tinytex’ successfully unpacked and MD5 sums checked
+package ‘selectr’ successfully unpacked and MD5 sums checked
+package ‘dbplyr’ successfully unpacked and MD5 sums checked
+package ‘modelr’ successfully unpacked and MD5 sums checked
+package ‘reprex’ successfully unpacked and MD5 sums checked
+package ‘rvest’ successfully unpacked and MD5 sums checked
+package ‘tidyverse’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\ShuaibReeyaz\AppData\Local\Temp\Rtmp4gUExc\downloaded_packages
+installing the source package ‘rmarkdown’
+
+trying URL 'https://cran.rstudio.com/src/contrib/rmarkdown_2.2.tar.gz'
+Content type 'application/x-gzip' length 3192895 bytes (3.0 MB)
+downloaded 3.0 MB
+
+* installing *source* package 'rmarkdown' ...
+** package 'rmarkdown' successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package 'rmarkdown'
+    finding HTML links ... done
+    all_output_formats                      html  
+    beamer_presentation                     html  
+    compile_notebook                        html  
+    context_document                        html  
+    convert_ipynb                           html  
+    default_output_format                   html  
+    draft                                   html  
+    find_external_resources                 html  
+    find_pandoc                             html  
+    github_document                         html  
+    html-dependencies                       html  
+    html_document                           html  
+    html_document_base                      html  
+    finding level-2 HTML links ... done
+
+    html_fragment                           html  
+    html_notebook                           html  
+    html_notebook_metadata                  html  
+    html_notebook_output                    html  
+    html_vignette                           html  
+    includes                                html  
+    ioslides_presentation                   html  
+    knit_params_ask                         html  
+    knitr_options                           html  
+    knitr_options_html                      html  
+    knitr_options_pdf                       html  
+    latex-dependencies                      html  
+    latex_dependency                        html  
+    md_document                             html  
+    metadata                                html  
+    navbar_html                             html  
+    odt_document                            html  
+    output_format                           html  
+    output_metadata                         html  
+    paged_table                             html  
+    pandoc_args                             html  
+    pandoc_available                        html  
+    pandoc_citeproc_convert                 html  
+    pandoc_convert                          html  
+    pandoc_exec                             html  
+    pandoc_options                          html  
+    pandoc_path_arg                         html  
+    pandoc_self_contained_html              html  
+    pandoc_template                         html  
+    parse_html_notebook                     html  
+    pdf_document                            html  
+    powerpoint_presentation                 html  
+    relative_to                             html  
+    render                                  html  
+    render_delayed                          html  
+    render_site                             html  
+    render_supporting_files                 html  
+    resolve_output_format                   html  
+    rmarkdown-package                       html  
+    rmarkdown_format                        html  
+    rmd_metadata                            html  
+    rtf_document                            html  
+    run                                     html  
+    shiny_prerendered_chunk                 html  
+    shiny_prerendered_clean                 html  
+    shiny_prerendered_server_start_code     html  
+    site_resources                          html  
+    slidy_presentation                      html  
+    tufte_handout                           html  
+    word_document                           html  
+    yaml_front_matter                       html  
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+*** arch - i386
+*** arch - x64
+** testing if installed package can be loaded from final location
+*** arch - i386
+*** arch - x64
+** testing if installed package keeps a record of temporary installation path
+* DONE (rmarkdown)
+
+The downloaded source packages are in
+	‘C:\Users\ShuaibReeyaz\AppData\Local\Temp\Rtmp4gUExc\downloaded_packages’
+> library(dslabs)
+Error in library(dslabs) : there is no package called ‘dslabs’
+> install.packages("dslabs")
+Installing package into ‘C:/Users/ShuaibReeyaz/Documents/R/win-library/3.6’
+(as ‘lib’ is unspecified)
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/3.6/dslabs_0.7.3.zip'
+Content type 'application/zip' length 4696950 bytes (4.5 MB)
+downloaded 4.5 MB
+
+package ‘dslabs’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\ShuaibReeyaz\AppData\Local\Temp\Rtmp4gUExc\downloaded_packages
+> data(heights)
+Warning message:
+In data(heights) : data set ‘heights’ not found
+> library(dslabs)
+Warning message:
+package ‘dslabs’ was built under R version 3.6.3 
+> library(tidyverse)
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v tibble  3.0.1     v dplyr   0.8.5
+v tidyr   1.0.2     v stringr 1.4.0
+v readr   1.3.1     v forcats 0.5.0
+v purrr   0.3.3     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+x purrr::lift()   masks caret::lift()
+Warning messages:
+1: package ‘tidyverse’ was built under R version 3.6.3 
+2: package ‘tibble’ was built under R version 3.6.3 
+3: package ‘tidyr’ was built under R version 3.6.3 
+4: package ‘dplyr’ was built under R version 3.6.3 
+5: package ‘stringr’ was built under R version 3.6.3 
+6: package ‘forcats’ was built under R version 3.6.3 
+> 
+> y<-heights$sex
+> x<-heights$height
+> set.seed(2007)
+> test_index <- createDataPartition(y, times = 1, p = 0.5, list =FALSE)
+> test_set <- heights[test_index,]
+> train_set <- heights[-test_index,]
+> y_hat<-sample(c("Male","Female"),length(test_index),replace =TRUE)
+> y_hat <-sample(c("Male","Female"),length(test_index), replace = TRUE) %>% factor(levels = levels(test_set$sex))
+> mean(y_hat == test_set$sex)
+[1] 0.5104762
+> heights %>% group_by(sex) %>% summarize(mean(height),sd(height))
+# A tibble: 2 x 3
+  sex    `mean(height)` `sd(height)`
+  <fct>           <dbl>        <dbl>
+1 Female           64.9         3.76
+2 Male             69.3         3.61
+> y_hat <- ifelse(x >62 ,"Male","Female") %>% factor(levels = levels(test_set$sex))
+> mean(y = y_hat)
+Error in mean.default(y = y_hat) : 
+  argument "x" is missing, with no default
+> mean(y == y_hat)
+[1] 0.7933333
+> cutoff <- seq(61, 70)
+> accuracy <- map_dbl(cutoff, function(x){
++     y_hat <- ifelse(train_set$height > x, "Male", "Female") %>% 
++         factor(levels = levels(test_set$sex))
++     mean(y_hat == train_set$sex)
++ })
+> max(accuracy)
+[1] 0.8495238
+> best_cutoff <- cutoff[which.max(acuracy)]
+Error in which.max(acuracy) : object 'acuracy' not found
+> best_cutoff <- cutoff[which.max(accuracy)]
+> best_cutoff
+[1] 64
+> y_hat <- ifelse(test+set$height > besT_cutoff, "Male","Female") %>% factor(levels = levels(test_set$sex))
+Error in ifelse(test + set$height > besT_cutoff, "Male", "Female") : 
+  object 'test' not found
+> y_hat <- factor(y_hat)
+> mean(y_hat == test_set$sex)
+[1] 0.74
