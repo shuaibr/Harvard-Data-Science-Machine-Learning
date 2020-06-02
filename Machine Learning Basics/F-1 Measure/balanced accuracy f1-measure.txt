@@ -1,0 +1,19 @@
+> cutoff <- seq(61,70)
+> F_1 <- map_dbl(cutoff, function(x){
+  +     y_hat <- ifelse(train_set$height > x, "Male", "Female") %>% 
+    +         factor(levels = levels(test_set$sex))
+  +     F_meas(data = y_hat, reference = factor(train_set$sex))
+  + })
+> max(F_1)
+[1] 0.6140351
+> best_cutoff<-cutoff[which.max(F_1)]
+> best_cutoff
+[1] 65
+> y_hat <- ifelse(test_set$height > best_cutoff, "Male", "Female") %>% 
+  +     factor(levels = levels(test_set$sex))
+> sensitivity(data = y_hat, reference = test_set$sex)
+[1] 0.605042
+> specificity(data = y_hat, reference = test_set$sex)
+[1] 0.8842365
+> mean(y_hat == test_set$sex)
+[1] 0.8209524
